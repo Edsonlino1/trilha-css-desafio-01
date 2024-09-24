@@ -1,18 +1,5 @@
 @import url('../css/reset.css');
 
-@media (max-width: 768px) {
-    .banner .banner-content {
-       width: 90%;
-    }
-    #course-content {
-       width: 100%;
-    }
-    #professional-challenges {
-       width: 90%;
-    }
- }
- 
-
 body {
     background-color: black;
 }
@@ -89,10 +76,9 @@ section {
     text-transform: uppercase;
     letter-spacing: 4px;
     background-color: transparent;
-    border-image-slice: 10;
     border-image: linear-gradient(#3ba1cd, #1572b7);
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
+    border-image-slice: 10;
+    border-radius: 30px; 
 }
 
 .banner .banner-content button:hover {
@@ -101,9 +87,8 @@ section {
 }
 
 #course-content {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 800px;
+    text-align: center;
 }
 
 #course-content .modules-list {
@@ -143,9 +128,8 @@ section {
 }
 
 #professional-challenges {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 800px;
+    text-align: center;
 }
 
 #professional-challenges img {
