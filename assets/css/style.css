@@ -81,10 +81,6 @@ section {
     border-radius: 30px; 
 }
 
-.banner .banner-content button:hover {
-    background-color: #33a8db;
-    color: white;
-}
 
 #course-content {
     width: 800px;
