@@ -1,4 +1,4 @@
-@import url('..assets/css/reset.css');
+@import url('../css/reset.css');
 
 @media (max-width: 768px) {
     .banner .banner-content {
@@ -35,7 +35,7 @@ section {
 }
 
 .banner {
-    background-image:-webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0 .6)), url(assets/images/banner.png);
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0 .6)), url('../images/banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
@@ -63,14 +63,6 @@ section {
     margin: 16px 0 25px;
 }
 
-@media (max-width: 768px) {
-    .banner h1 {
-        font-size: 2rem;
-    }
-    .banner p {
-        font-size: 1rem;
-    }
-}
 
 
 .banner .logo {
@@ -97,7 +89,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 4px;
     background-color: transparent;
-    border: 2px solid;
+    border-image-slice: 10;
     border-image: linear-gradient(#3ba1cd, #1572b7);
     border-radius: 30px;
     transition: background-color 0.3s ease;
@@ -135,7 +127,7 @@ section {
 #transform-world {
     height: 560px;
     background-size: cover;
-    background-image: url(assets/images/woman-code.png);
+    background-image: url('../images/woman-code.png');
     background-attachment: fixed;
     border-top: 1px solid #33a8db80;
     border-bottom: 1px solid #33a8db80;
