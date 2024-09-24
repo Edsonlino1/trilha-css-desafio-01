@@ -1,4 +1,17 @@
-@import url('reset.css');
+@import url('..assets/css/reset.css');
+
+@media (max-width: 768px) {
+    .banner .banner-content {
+       width: 90%;
+    }
+    #course-content {
+       width: 100%;
+    }
+    #professional-challenges {
+       width: 90%;
+    }
+ }
+ 
 
 body {
     background-color: black;
@@ -22,7 +35,7 @@ section {
 }
 
 .banner {
-    background-image:-webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0 .6)), url('../assets/images/banner.png');
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0 .6)), url(assets/images/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
@@ -50,8 +63,18 @@ section {
     margin: 16px 0 25px;
 }
 
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+}
+
+
 .banner .logo {
-    background-color: rgba (0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .2);
     height: 260px;
     width: 260px;
     margin: auto;
@@ -74,14 +97,21 @@ section {
     text-transform: uppercase;
     letter-spacing: 4px;
     background-color: transparent;
+    border: 2px solid;
     border-image: linear-gradient(#3ba1cd, #1572b7);
-    border-image-slice: 10;
     border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .banner-content button:hover {
+    background-color: #33a8db;
+    color: white;
 }
 
 #course-content {
-    width: 800px;
-    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #course-content .modules-list {
@@ -105,7 +135,7 @@ section {
 #transform-world {
     height: 560px;
     background-size: cover;
-    background-image: url("../assets/images/woman-code.png");
+    background-image: url(assets/images/woman-code.png);
     background-attachment: fixed;
     border-top: 1px solid #33a8db80;
     border-bottom: 1px solid #33a8db80;
@@ -121,8 +151,9 @@ section {
 }
 
 #professional-challenges {
-   text-align: center;
-   width: 800px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #professional-challenges img {
